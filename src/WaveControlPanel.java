@@ -108,7 +108,7 @@ public class WaveControlPanel extends JPanel
 
 
         setLayout(new BorderLayout());
-        wPanel.setPreferredSize(new Dimension((width*2)/3, height));
+        wPanel.setSize(new Dimension((width*2)/3, height));
         add(wPanel, BorderLayout.CENTER);
         add(panel5, BorderLayout.WEST);
 
@@ -126,7 +126,7 @@ public class WaveControlPanel extends JPanel
             {
                 color = chooser.showDialog(null, "Change Wave color", color);
                 wPanel.changeColor(color);
-            } else if (action == start) {
+            } else if (event.getSource() == start) {
                 wPanel.resume();
             } else if (action == clear) {
                 wPanel.clearPanel();

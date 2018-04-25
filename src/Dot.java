@@ -7,7 +7,7 @@ public class Dot {
 
     private Color color;
     int x,y;
-    private final int RADIUS = 3;
+    private final int RADIUS = 8;
 
     public Dot (int x1, int y1, Color color1) {
         color = color1;
